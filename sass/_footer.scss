@@ -1,0 +1,48 @@
+.footer{
+    background-color: $color-secondary;
+    grid-column: main-start/main-end;
+    padding: 4rem;
+
+    &_nav{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(1rem, 1fr));
+        gap: .7rem;
+        align-items: center;
+
+
+        &-link{
+            list-style: none;
+           
+            
+
+            .link{
+                font-size: 1.2rem;
+                color: #fff;
+                text-decoration: none;
+                text-transform: uppercase;
+                text-align: center;
+                display: block;
+                padding: .7rem;
+                font-family: $font-primary;
+                transition: all .2s ease-in-out;
+
+                &:hover{
+                    background: rgba(194, 194, 194, 0.459);
+                    border-radius: 5px;
+                    transform: translateY(-3px);
+                }
+                 
+                
+            }
+            
+        }
+    }
+
+    .copyright{
+        padding: 2rem 0;
+        text-align: center;
+        text-transform: uppercase;
+        color: #fff;
+
+    }
+}

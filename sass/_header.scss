@@ -1,0 +1,91 @@
+.header{
+    background-color: $color-grey-dark-1;
+    grid-column: main-start/col-end 6;
+    background-image: linear-gradient(rgba($color-secondary, .93), rgba($color-secondary, .93)), url(../img/hero.jpeg);
+    background-size: cover;
+    background-position: center;
+    padding: 3rem;
+    display: grid;
+    grid-template-rows: 1fr min-content 5rem 1fr;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    row-gap: 1rem;
+
+    
+
+
+      
+
+    &_logo{
+        height: 3rem;
+        justify-self: center;
+        animation: fadeInTop 4s ease-out;
+        // animation-duration: 6s;
+        // animation-delay: 2s;
+       
+
+    }
+
+    &_title{
+        font-size: 2rem;
+        color:$color-grey-light-2 ;
+        animation: fadeIn 3s;
+
+    }
+
+    &_intro{
+        color: $color-grey-light-1;
+        line-height: 1;
+        font-size: 3.5rem;
+        align-self: center;
+        animation: fadeIn 3s;
+    }
+
+    &_btn{
+        justify-self: start;
+        align-self: center;
+        animation: fadeIn 3s;
+    }
+
+    &_bottom{
+        font-size: 1.3rem;
+        color:$color-grey-light-2 ;
+        text-transform: uppercase;
+        display: grid;
+        grid-template-columns: 1fr 5rem 1fr;
+         column-gap: 2rem;
+         align-items: center;
+         animation: fadeIn 3s;
+        
+        
+        &::before,
+        &::after{
+            background-color:currentColor;
+            height: 1px;
+            content: "";
+            display: block;
+            animation: fadeIn 3s;
+           
+        }
+        
+
+    }
+
+    &_logos{
+        display: grid;
+        grid-template-columns:repeat(4, 1fr);
+        justify-items: center;
+        animation: fadeIn 3s;
+
+         
+        img{
+            max-height: 1.5rem;
+            max-width: 100%;
+            filter: brightness(70%);
+        }
+         
+
+         
+
+    }
+}
